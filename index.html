@@ -1,49 +1,65 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Wes Alvaro : Computer Scientist Extraordinaire" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
+    <meta charset="utf-8">
     <title>Wes Alvaro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/css/bootstrap-combined.min.css" rel="stylesheet"/>
+    <link href="stylesheets/prettify.css" rel="stylesheet"/>
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
 
-  <body>
+  <body onload="prettyPrint()">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/wesalvaro">View on GitHub</a>
-
-          <h1 id="project_title">Wes Alvaro</h1>
-          <h2 id="project_tagline">Computer Scientist Extraordinaire</h2>
-
-        </header>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Wes Alvaro | Computer Scientist Extraordinaire</a>
+        </div>
+      </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>What do I do?</h3>
-
-<hr><p>Create awesome tube stuff for a better Internet.</p>
-
-<h3>Where did I learn it?</h3>
-
-<pre><code>from college import majors, minors
+    <div class="container">
+      <div class="hero-unit">
+        <h1>The Internet is neat.</h1>
+        <p>I like to make it neater.</p>
+      </div>
+      <div class="row">
+        <div class="span6">
+          <h2>What have I done?</h2>
+            <ul>
+              <li><a href="http://twitter.com/google">@Google</a> - Embedded Web Applications, etc.</li>
+              <li><a href="http://twitter.com/thewebsiteguys">@theWebsiteGuys</a> - SOHO Websites.</li>
+              <li><a href="http://twitter.com/icl_utk">@ICL_UTK</a> - Multi-core linear algebra kernel development.</li>
+              <li><a href="http://twitter.com/intel">@Intel</a> - Internal Service Virtualization Pipeline</li>
+              <li><a href="http://twitter.com/ornl">@ORNL</a> - Scale development</li>
+              <li><a href="http://twitter.com/microsoft">@Microsoft</a> - Sho development</li>
+            </ul>
+          <h2>What do I know?</h2>
+          <pre class="prettyprint linenums">from college import majors, minors
 from degree_types import bachelors as BS, masters as MS
 
 def UniversityOfTennessee():
   yield (2008, BS, majors.COMPUTER_SCIENCE | minors.MATH)
-  yield (2010, MS, majors.COMPUTER_SCIENCE)
-</code></pre>
-
-<h3>Where have I been?</h3>
-
-<pre><code>my.work = {
+  yield (2010, MS, majors.COMPUTER_SCIENCE)</pre>
+        </div>
+        <div class="span6">
+          <h2>Where have I been?</h2>
+          <pre class="prettyprint linenums">my.work = {
   // Current positions:
   google: function(python, javaScript, html5, java) {
     return new WebEngineer(python, javaScript, html5, java).
@@ -70,48 +86,18 @@ def UniversityOfTennessee():
     return new ResearchIntern(cSharp, python).
       start(2008).end(2008);
   }
-};
-</code></pre>
+};</pre>
+        </div>
+          
+      </div>
 
-<h3>What did I do?</h3>
+      <hr>
 
-<p>Here are some Twitter style descriptions of what I've done:</p>
-
-<ul>
-<li>
-<a href="http://twitter.com/google">@Google</a> - Embedded Web Applications, etc.</li>
-<li>
-<a href="http://twitter.com/thewebsiteguys">@theWebsiteGuys</a> - SOHO Websites.</li>
-<li>
-<a href="http://twitter.com/icl_utk">@ICL_UTK</a> - Multi-core linear algebra kernel development.</li>
-<li>
-<a href="http://twitter.com/intel">@Intel</a> - Service Virtualization Pipeline</li>
-<li>
-<a href="http://twitter.com/ornl">@ORNL</a> - <a href="http://scale.ornl.gov">Scale</a> development</li>
-<li>
-<a href="http://twitter.com/microsoft">@Microsoft</a> - <a href="http://research.microsoft.com/en-us/projects/sho/">Sho</a> development</li>
-</ul>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer>
+        <p>&copy; Wes Alvaro 2012</p>
       </footer>
-    </div>
 
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-34391337-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-
+    </div> <!-- /container -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
   </body>
 </html>
