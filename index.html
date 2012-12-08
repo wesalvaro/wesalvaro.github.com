@@ -59,33 +59,36 @@ def UniversityOfTennessee():
         </div>
         <div class="span6">
           <h2>Where have I been?</h2>
-          <pre class="prettyprint">my.work = {
-  // Current positions:
-  google: function(python, javaScript, html5, java) {
-    return new WebEngineer(python, javaScript, html5, java).
-      start(2011);
-  },
-  websiteGuys: function(javaScript, html5, php) {
-    return new DirectorWebDev(javaScript, html5, php).
-      start(2007);
-  },
-  // Previous positions:
-  icl: function(cuda, cellAsm, c, cpp, laTex) {
-    return new GradResearchAsst(cuda, cellAsm, c, cpp, laTex).
-      start(2005).end(2011);
-  },
-  intel: function(cSharp, javaScript, microsoft) {
-    return new GraduateTechIntern(cSharp, javaScript, microsoft).
-      start(2010).end(2010);
-  },
-  oakRidgeNationalLaboratory: function(java, cpp) {
-    return new NeslsIntern(java, cpp).
-      start(2009).end(2010);
-  },
-  microsoft: function(cSharp, python) {
-    return new ResearchIntern(cSharp, python).
-      start(2008).end(2008);
-  }
+          <pre class="prettyprint">function Me(c, cellAsm, cpp, cuda, cSharp,
+            html5, java, javaScript, php, python) {
+  this.work = {
+    // Current positions:
+    google: function() {
+      return new WebEngineer(python, javaScript, html5, java).
+        start(2011);
+    },
+    websiteGuys: function() {
+      return new DirectorWebDev(javaScript, html5, php).
+        start(2007);
+    },
+    // Previous positions:
+    icl: function() {
+      return new GradResearchAsst(cuda, cellAsm, c, cpp).
+        start(2005).end(2011);
+    },
+    intel: function() {
+      return new GraduateTechIntern(cSharp, javaScript).
+        start(2010).end(2010);
+    },
+    oakRidgeNationalLaboratory: function() {
+      return new NeslsIntern(java, cpp).
+        start(2009).end(2010);
+    },
+    microsoft: function() {
+      return new ResearchIntern(cSharp, python).
+        start(2008).end(2008);
+    }
+  };
 };</pre>
         </div>
           
